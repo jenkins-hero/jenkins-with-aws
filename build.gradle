@@ -1,0 +1,19 @@
+plugins {
+    id 'pl.allegro.tech.build.axion-release' version '1.12.1'
+    id 'com.palantir.docker' version '0.25.0'
+    id 'com.palantir.docker-run' version '0.25.0'
+}
+
+group 'com.tomgregory'
+project.version = scmVersion.version
+
+docker {
+    name "${project.name}:${project.version}"
+}
+
+dockerRun {
+    name "${project.name}"
+    image "${project.name}:${project.version}"
+    ports '8080:8080'
+    clean true
+}
