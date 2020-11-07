@@ -1,4 +1,7 @@
-This project creates a Docker image for Jenkins with the AWS CLI installed.
+This project creates a Docker image for Jenkins with the following additional packages:
+
+* AWS CLI
+* jq
 
 ## Building
 
