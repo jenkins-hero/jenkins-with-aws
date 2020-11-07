@@ -8,6 +8,7 @@ group 'com.tomgregory'
 project.version = scmVersion.version
 
 docker {
+    files 'plugins.txt'
     name "${project.name}:${project.version}"
 }
 

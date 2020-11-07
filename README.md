@@ -3,6 +3,12 @@ This project creates a Docker image for Jenkins with the following additional pa
 * AWS CLI
 * jq
 
+It also installs the following plugins:
+
+* Git
+* Pipeline a.k.a. `workflow-aggregator`
+* AWS Steps a.k.a. `pipeline-aws`
+
 ## Building
 
 `./gradlew docker`
